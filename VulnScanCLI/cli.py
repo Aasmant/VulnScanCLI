@@ -77,7 +77,7 @@ Examples:
             parser.print_help()
             return 1
     except Exception as e:
-        print(f"❌ Error: {e}", file=sys.stderr)
+        print(f" Error: {e}", file=sys.stderr)
         return 1
 
 
@@ -98,7 +98,7 @@ def cmd_scan(args, db):
         results=results
     )
     
-    print(f"✅ Scan complete! Scan ID: {scan_record['id']}")
+    print(f" Scan complete! Scan ID: {scan_record['id']}")
     print(f"   Found {len(results.get('hosts', []))} hosts")
     print(f"\n   Generate report: VulnScanCLI report --scan-id {scan_record['id']}")
     
@@ -110,17 +110,17 @@ def cmd_report(args, db):
     scan = db.get_scan(args.scan_id)
     
     if not scan:
-        print(f"❌ Scan {args.scan_id} not found")
+        print(f" Scan {args.scan_id} not found")
         return 1
     
-    print(f"📄 Generating {args.format} report for scan {args.scan_id}...")
+    print(f" Generating {args.format} report for scan {args.scan_id}...")
     
     generator = ReportGenerator()
     report = generator.generate(scan, format=args.format)
     
     if args.output:
         Path(args.output).write_text(report)
-        print(f"✅ Report saved to {args.output}")
+        print(f" Report saved to {args.output}")
     else:
         print(report)
     
@@ -149,7 +149,7 @@ def cmd_status(args, db):
     scan = db.get_scan(args.scan_id)
     
     if not scan:
-        print(f"❌ Scan {args.scan_id} not found")
+        print(f" Scan {args.scan_id} not found")
         return 1
     
     print(f"\nScan {args.scan_id}:")
@@ -165,11 +165,11 @@ def cmd_db(args, db):
     """Database operations."""
     if args.action == 'init':
         db.init_db()
-        print("✅ Database initialized")
+        print(" Database initialized")
         return 0
     elif args.action == 'reset':
         db.reset_db()
-        print("✅ Database reset")
+        print(" Database reset")
         return 0
     elif args.action == 'info':
         info = db.get_info()
