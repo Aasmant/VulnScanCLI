@@ -1,0 +1,13 @@
+# Scanning
+python-nmap==0.7.1
+requests==2.33.1
+
+# CLI & Utilities
+click==8.3.3
+python-dotenv==1.2.2
+
+# Notes:
+# - SQLite3 is built-in to Python
+# - JSON/HTML reporting uses built-in libraries
+# - No external database needed
+# - Keep it simple!

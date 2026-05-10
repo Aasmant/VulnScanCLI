@@ -1,0 +1,51 @@
+# Git ignore for VulnScanCLI project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Reports and results
+*.json
+*.html
+*.pdf
+reports/
+scan_results/
+*_scans.db
+
+# Sensitive files
+.env
+.env.local
+*.key
+*.pem
+credentials.txt
+
+# System
+.DS_Store
+Thumbs.db
+*.log
+
+# Test coverage
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.bak
+temp/
+resume.md
