@@ -1,30 +1,23 @@
 # VulnScanCLI - Python Security Automation Tool
 
-**Status**: Simple Python CLI tool for network scanning and vulnerability reporting  
-**Built for**: Learning and practicing security automation  
-**Free & Open Source**: Yes ✅
+**What**: Simple Python CLI tool for network scanning and vulnerability reporting  
+**Why**: For learning and practicing security automation  
+**Free & Open Source**: Yes
 
 ---
 
 ## What This Is
 
-A **simple Python automation tool** I built to learn:
+A **simple Python automation tool**  built to learn:
 
-✅ Network scanning (Nmap integration)  
-✅ Vulnerability identification  
-✅ Report generation (JSON/HTML)  
-✅ Python CLI applications  
-✅ SQLite database usage  
+ Network scanning (Nmap integration)  
+ Vulnerability identification  
+Report generation (JSON/HTML)  
+ Python CLI applications  
+ SQLite database usage  
 
-**What it's NOT:**
-- ❌ Enterprise vulnerability scanner (too basic)
-- ❌ Replacement for Nessus/OpenVAS
-- ❌ Complex full-stack application
-- ❌ Production-ready security tool
 
----
-
-## Quick Start (30 seconds)
+## Quick Start 
 
 ```bash
 # 1. Install
@@ -127,37 +120,15 @@ VulnScanCLI/
 
 ---
 
-## What I Learned Building This
+## Learned Building This
 
-✅ Network discovery with Nmap  
-✅ Python subprocess integration  
-✅ SQLite for local data storage  
-✅ JSON for data interchange  
-✅ CLI design with argparse  
-✅ Report generation patterns  
-✅ Python package structure  
-
----
-
-## Limitations (Intentional)
-
-- No external API calls (NVD/CISA) → Keep it simple
-- Local database only → No network requirements  
-- Basic vulnerability detection → Learning project, not enterprise tool
-- Single-threaded scanning → Simplicity over performance
-- No GUI dashboard → CLI is cleaner for learning
-
----
-
-## Why This Approach?
-
-Instead of building a "fancy full-stack app", I focused on:
-
-✅ **Understanding security workflows** through automation  
-✅ **Clean Python code** with proper structure  
-✅ **Real tools** (Nmap) that security pros use  
-✅ **Honest scope** - this is what it is, nothing more  
-✅ **Portfolio value** - shows I can automate, not just fetch data  
+Network discovery with Nmap  
+Python subprocess integration  
+SQLite for local data storage  
+JSON for data interchange  
+CLI design with argparse  
+Report generation patterns  
+Python package structure  
 
 ---
 
@@ -229,11 +200,3 @@ python -m VulnScanCLI scan 192.168.1.0/24
 ⚠️ **Warning**: Only scan networks you own or have written permission to scan.
 
 ---
-
-## License
-
-MIT License - Free to use and modify
-
----
-
-**This is a learning project. Simple, honest, human-made. 🔍**
